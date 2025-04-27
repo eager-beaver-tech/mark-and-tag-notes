@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: '/mark-and-tag-notes/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
